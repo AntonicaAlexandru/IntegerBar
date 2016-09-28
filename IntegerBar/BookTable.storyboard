@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PSe-Hy-ehb">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Book TableVC-->
+        <scene sceneID="pn7-Mv-6yl">
+            <objects>
+                <viewController storyboardIdentifier="BookTableVC" id="PSe-Hy-ehb" customClass="BookTableVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Th2-uU-6pE"/>
+                        <viewControllerLayoutGuide type="bottom" id="CsE-D9-MEl"/>
+                    </layoutGuides>
+                    <view key="view" autoresizesSubviews="NO" contentMode="scaleToFill" id="HN6-3H-q71">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rai-nT-NSs">
+                                <rect key="frame" x="240" y="270" width="120" height="60"/>
+                                <state key="normal" image="callbutton"/>
+                                <connections>
+                                    <action selector="bookNowTouchUpInside:" destination="PSe-Hy-ehb" eventType="touchUpInside" id="Sbz-bS-qTW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In order to book a table, please call using the button below." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzK-Fy-ikn">
+                                <rect key="frame" x="60" y="241" width="480" height="27"/>
+                                <fontDescription key="fontDescription" name="SnellRoundhand" family="Snell Roundhand" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.64451200738916259" colorSpace="calibratedRGB"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZzK-Fy-ikn" firstAttribute="centerX" secondItem="HN6-3H-q71" secondAttribute="centerX" id="AL3-WU-u84"/>
+                            <constraint firstItem="rai-nT-NSs" firstAttribute="height" secondItem="HN6-3H-q71" secondAttribute="height" multiplier="0.1" id="RiA-bz-Ulv"/>
+                            <constraint firstItem="rai-nT-NSs" firstAttribute="centerY" secondItem="HN6-3H-q71" secondAttribute="centerY" id="YJF-kP-k0N"/>
+                            <constraint firstItem="rai-nT-NSs" firstAttribute="width" secondItem="HN6-3H-q71" secondAttribute="width" multiplier="0.2" id="ZCL-Xb-BmC"/>
+                            <constraint firstItem="rai-nT-NSs" firstAttribute="top" secondItem="ZzK-Fy-ikn" secondAttribute="bottom" constant="2" id="hGV-7k-QoU"/>
+                            <constraint firstItem="rai-nT-NSs" firstAttribute="centerX" secondItem="HN6-3H-q71" secondAttribute="centerX" id="rmt-gA-Atf"/>
+                            <constraint firstItem="ZzK-Fy-ikn" firstAttribute="width" secondItem="HN6-3H-q71" secondAttribute="width" multiplier="0.8" id="rxb-cM-YhZ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o5J-wI-m2c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46" y="372"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="callbutton" width="46" height="45"/>
+    </resources>
+</document>

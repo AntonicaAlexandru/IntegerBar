@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10171" systemVersion="15B42" minimumToolsVersion="Xcode 7.0">
+    <entity name="Picture" representedClassName="Picture" syncable="YES">
+        <attribute name="pictureLink" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toProduct" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Productt" inverseName="productPictures" inverseEntity="Productt" syncable="YES"/>
+    </entity>
+    <entity name="Productt" representedClassName="Productt" syncable="YES">
+        <attribute name="category" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ingredients" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="productDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productID" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="rating" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="stockNumber" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="subcategory" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="productPictures" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Picture" inverseName="toProduct" inverseEntity="Picture" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Picture" positionX="-3134" positionY="-1378" width="128" height="73"/>
+        <element name="Productt" positionX="-3402" positionY="-1512" width="128" height="193"/>
+    </elements>
+</model>
